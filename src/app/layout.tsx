@@ -3,7 +3,7 @@ import { Inter } from 'next/font/google'
 import './globals.css'
 import StarsCanvas from '@/components/main/StarBackground'
 import Navbar from '@/components/main/Navbar'
-
+import { Analytics } from '@vercel/analytics/react';
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
@@ -22,7 +22,9 @@ export default function RootLayout({
       <body className={`${inter.className} bg-[#030014]`}>
         <StarsCanvas/>
         <Navbar />
-        {children}</body>
+        {children}
+        <Analytics />
+        </body>
     </html>
   )
 }
