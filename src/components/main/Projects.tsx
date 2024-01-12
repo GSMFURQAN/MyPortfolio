@@ -10,7 +10,8 @@ const Projects = () => {
       <h3 className=" mx-[20%] mb-14 text-4xl font-semibold text-white ">
         Projects{" "}
       </h3>
-      <div className="h-full w-full flex flex-wrap sm:flex-row gap-8 px-16">
+      <div className="h-full w-full flex flex-wrap sm:flex-row gap-6 px-12">
+
         <ProjectCard
           src="/sols.png"
           title="Solicitors"
@@ -19,9 +20,9 @@ const Projects = () => {
         <ProjectCard
           src="/captialFunding.png"
           title="Senior Long Term Care"
-          description="This is a Project Investigation website used by retired Govt employees to avail the benefits of reimbursement schemes offered by the
-            State. Its functionalities include, uploading the facility documents and claiming reimbursements by filling out the series of forms and managing
-            these requests from Admin portal through investigation.
+          description="This is a Project Investigation website for Govt employees to avail the benefits of reimbursement schemes offered by the
+            State. Its functionalities include, uploading the facility documents and claiming funds by filling out the series of forms and managing
+            the requests from Admin portal through investigation.
   "
         />
         <ProjectCard
