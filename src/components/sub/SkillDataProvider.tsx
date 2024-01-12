@@ -10,9 +10,10 @@ interface Props {
   height: number;
   index: number;
 }
+
 const SkillDataProvider = ({ src, width, height, index }: Props) => {
   const { ref, inView } = useInView({
-    triggerOnce: true,
+    // triggerOnce: true,
   });
 
   const imageVariants = {
@@ -20,21 +21,27 @@ const SkillDataProvider = ({ src, width, height, index }: Props) => {
     visible: { opacity: 1 },
   };
   const animationDelay = 0.3;
-  return(
-    <motion.div 
-    ref={ref}
-    initial='hidden'
-    variants={imageVariants}
-    animate={inView? 'visible':'hidden'}
-    custom={index}
-    transition={{delay:index*animationDelay}}>
-<Image
-src={src}
-alt=''
-width={width}
-height={height}/>
+
+  return (
+    <motion.div
+      ref={ref}
+      initial="hidden"
+      variants={imageVariants}
+      animate={inView ? "visible" : "hidden"}
+      custom={index}
+      transition={{ delay: index * animationDelay }}
+    >
+      <div className="px-1.5">
+        <Image
+          src={src}
+          alt=""
+          width={width}
+          height={height}
+          className="cursor-pointer"
+        />
+      </div>
     </motion.div>
-    );
+  );
 };
 
 export default SkillDataProvider;

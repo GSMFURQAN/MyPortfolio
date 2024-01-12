@@ -16,11 +16,12 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+
   return (
     <html lang="en">
       <body className={`${inter.className} bg-[#030014]`}>
         <StarsCanvas/>
-        <Navbar/>
+        <Navbar />
         {children}</body>
     </html>
   )

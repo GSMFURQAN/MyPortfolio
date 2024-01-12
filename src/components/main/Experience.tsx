@@ -3,7 +3,7 @@ import ExperienceTimeLine from '../sub/ExperienceTimeLine'
 
 const Experience = () => {
   return (
-    <div>
+    <div className='mb-10'>
         <ExperienceTimeLine/>
     </div>
   )

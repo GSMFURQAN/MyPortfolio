@@ -82,16 +82,24 @@ export const Skill_data = [
   
   export const Socials = [
     {
-      name: "Discord",
-      src: "/instagram.svg",
+      name: "phone",
+      src: "/telephone.png",
+      link: '8639410779'
     },
     {
-      name: "Facebook",
-      src: "/facebook.svg",
+      name: "gmail",
+      src: "/gmail.png",
+      link: 'gsmfurqan@gmail.com'
     },
     {
-      name: "Instagram",
-      src: "/discord.svg",
+      name: "github",
+      src: "/github.png",
+      link: 'https://github.com/GSMFURQAN'
+    },
+    {
+      name: "linkedin",
+      src: "/linkedin.png",
+      link: 'https://www.linkedin.com/in/gsm-furqan-199912ju/'
     },
   ];
   
@@ -115,18 +123,6 @@ export const Skill_data = [
       Image: "/js.png",
       width: 65,
       height: 65,
-    },
-    {
-      skill_name: "Tailwind Css",
-      Image: "/tailwind.png",
-      width: 80,
-      height: 80,
-    },
-    {
-      skill_name: "Material UI",
-      Image: "/mui.png",
-      width: 80,
-      height: 80,
     },
     {
       skill_name: "React",
@@ -160,6 +156,46 @@ export const Skill_data = [
     },
   ];
   
+  export const Frontend_Lib = [
+    {
+      skill_name: "Tailwind Css",
+      Image: "/tailwind.png",
+      width: 80,
+      height: 80,
+    },
+    {
+      skill_name: "Material UI",
+      Image: "/mui.png",
+      width: 80,
+      height: 80,
+    },
+    {
+      skill_name: "Bootstrap",
+      Image: "/bootstrap.svg",
+      width: 80,
+      height: 80,
+    },
+  
+    {
+      skill_name: "Git Hub",
+      Image: "/github.png",
+      width: 80,
+      height: 80,
+    },
+    {
+      skill_name: "Git Lab",
+      Image: "/gitlab.svg",
+      width: 80,
+      height: 80,
+    },
+    {
+      skill_name: "Jira",
+      Image: "/jira.svg",
+      width: 80,
+      height: 80,
+    },
+  ]
+
   export const Backend_skill = [
     {
       skill_name: "Node js",

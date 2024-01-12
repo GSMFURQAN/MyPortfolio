@@ -2,16 +2,41 @@
 import React from 'react'
 import {motion} from 'framer-motion'
 import { slideInFromLeft, slideInFromRight, slideInFromTop } from '../../../utils/motion'
-import { SparklesIcon } from '@heroicons/react/16/solid'
+import { ArrowDownTrayIcon, SparklesIcon } from '@heroicons/react/16/solid'
 import Image from 'next/image'
 
 
 const HeroContent = () => {
+  const handleDownload = () => {
+    // Create a sample text file content
+    const fileContent = "Hello, this is a sample text file.";
+
+    // Convert the content to a Blob
+    const blob = new Blob([fileContent], { type: "text/plain" });
+
+    // Create a link element
+    const link = document.createElement("a");
+
+    // Set the download attribute with the desired file name
+    link.download = "Furqan_ReactDev_Resume.pdf";
+
+    // Create a URL for the Blob and set it as the href attribute
+    link.href = window.URL.createObjectURL(blob);
+
+    // Append the link to the document
+    document.body.appendChild(link);
+
+    // Trigger a click on the link to start the download
+    link.click();
+
+    // Remove the link from the document
+    document.body.removeChild(link);
+  };
     return (
       <motion.div
         initial="hidden"
         animate="visible"
-        className="flex flex-row items-center justify-center px-20 mt-36 w-full z-[20]"
+        className="flex flex-row items-center justify-center px-20 mt-28 w-full z-[20]"
       >
         <div className="h-full w-full flex flex-col gap-5 justify-center m-auto text-start">
           <motion.div
@@ -42,20 +67,22 @@ const HeroContent = () => {
             variants={slideInFromLeft(0.8)}
             className="text-lg text-gray-400 my-5 max-w-[600px]"
           >
-            I&apos;m a Front end Developer with experience in Website
-         and Software development. Check out my projects and skills.
+            I&apos;m a Front end Developer with 3+ years of experience in Website
+         and Software development. Navigate through the website to find out my skills, projects and experience.
           </motion.p>
           <motion.a
             variants={slideInFromLeft(1)}
-            className="py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px]"
-          >
-            Learn More!
+            className="flex py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px]"
+            onClick={()=>handleDownload()}
+          > 
+          <ArrowDownTrayIcon className='text-[#b49bff] mt-0.5 mx-[10px] h-5 w-5'/>
+            Download Resume
           </motion.a>
         </div>
   
         <motion.div
           variants={slideInFromRight(0.8)}
-          className="w-full h-full flex p-18"
+          className="w-full h-full flex p-18 ps-16"
         >
           <Image
             src="/mainIconsdark.svg"
