@@ -125,6 +125,12 @@ export const Skill_data = [
       height: 65,
     },
     {
+      skill_name: "Type Script",
+      Image: "/ts.png",
+      width: 80,
+      height: 80,
+    },
+    {
       skill_name: "React",
       Image: "/react.png",
       width: 80,
@@ -139,12 +145,6 @@ export const Skill_data = [
     {
       skill_name: "React Query",
       Image: "/reactquery.png",
-      width: 80,
-      height: 80,
-    },
-    {
-      skill_name: "Type Script",
-      Image: "/ts.png",
       width: 80,
       height: 80,
     },

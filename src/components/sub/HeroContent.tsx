@@ -1,10 +1,13 @@
-'use client'
-import React from 'react'
-import {motion} from 'framer-motion'
-import { slideInFromLeft, slideInFromRight, slideInFromTop } from '../../../utils/motion'
-import { ArrowDownTrayIcon, SparklesIcon } from '@heroicons/react/16/solid'
-import Image from 'next/image'
-
+"use client";
+import React from "react";
+import { motion } from "framer-motion";
+import {
+  slideInFromLeft,
+  slideInFromRight,
+  slideInFromTop,
+} from "../../../utils/motion";
+import { ArrowDownTrayIcon, SparklesIcon } from "@heroicons/react/16/solid";
+import Image from "next/image";
 
 const HeroContent = () => {
   const handleDownload = () => {
@@ -32,67 +35,65 @@ const HeroContent = () => {
     // Remove the link from the document
     document.body.removeChild(link);
   };
-    return (
-      <motion.div
-        initial="hidden"
-        animate="visible"
-        className="flex flex-row items-center justify-center px-20 mt-28 w-full z-[20]"
-      >
-        <div className="h-full w-full flex flex-col gap-5 justify-center m-auto text-start">
-          <motion.div
-            variants={slideInFromTop}
-            className="Welcome-box py-[8px] px-[10px] border border-[#7042f88b] opacity-[0.9]"
-          >
-            <SparklesIcon className="text-[#b49bff] mr-[10px] h-5 w-5" />
-            <h1 className="Welcome-text text-[14px]">
-              UI Developer Portfolio
-            </h1>
-          </motion.div>
-  
-          <motion.div
-            variants={slideInFromLeft(0.5)}
-            className="flex flex-col gap-6 mt-6 text-6xl font-bold text-white max-w-[600px] w-auto h-auto"
-          >
-            <span>
-              Providing
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
-                {" "}
-                the best{" "}
-              </span>
-              Web exprience
-            </span>
-          </motion.div>
-  
-          <motion.p
-            variants={slideInFromLeft(0.8)}
-            className="text-lg text-gray-400 my-5 max-w-[600px]"
-          >
-            I&apos;m a Front end Developer with 3+ years of experience in Website
-         and Software development. Navigate through the website to find out my skills, projects and experience.
-          </motion.p>
-          <motion.a
-            variants={slideInFromLeft(1)}
-            className="flex py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px]"
-            onClick={()=>handleDownload()}
-          > 
-          <ArrowDownTrayIcon className='text-[#b49bff] mt-0.5 mx-[10px] h-5 w-5'/>
-            Download Resume
-          </motion.a>
-        </div>
-  
+  return (
+    <motion.div
+      initial="hidden"
+      animate="visible"
+      className="flex flex-row items-center justify-center px-20 mt-28 w-full z-[20]"
+    >
+      <div className="h-full w-full flex flex-col gap-5 justify-center m-auto text-start">
         <motion.div
-          variants={slideInFromRight(0.8)}
-          className="w-full h-full flex p-18 ps-16"
+          variants={slideInFromTop}
+          className="Welcome-box py-[8px] px-[10px] border border-[#7042f88b] opacity-[0.9]"
         >
-          <Image
-            src="/mainIconsdark.svg"
-            alt="work icons"
-            height={650}
-            width={650}
-          />
+          <SparklesIcon className="text-[#b49bff] mr-[10px] h-5 w-5" />
+          <h1 className="Welcome-text text-[14px]">UI Developer Portfolio</h1>
         </motion.div>
+
+        <motion.div
+          variants={slideInFromLeft(0.5)}
+          className="flex flex-col gap-6 mt-6 text-4xl font-bold text-white max-w-[600px] w-auto h-auto"
+        >
+          <span>
+            Hi, I&apos;m Furqan.{" "}
+            <span className="block my-1 text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
+              {" "}
+              Frontend Developer{" "}
+            </span>
+          </span>
+        </motion.div>
+
+        <motion.p
+          variants={slideInFromLeft(0.8)}
+          className="text-lg text-gray-400 mb-5 max-w-[600px]"
+        >
+          with 3+ years of experience in Website and Software development.
+          Navigate through this website to find out my skills, projects and
+          experience.
+        </motion.p>
+        <motion.a
+          variants={slideInFromLeft(1)}
+          className="flex py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px]"
+          onClick={() => handleDownload()}
+        >
+          <ArrowDownTrayIcon className="text-[#b49bff] mt-0.5 mx-[10px] h-5 w-5" />
+          Download Resume
+        </motion.a>
+      </div>
+
+      <motion.div
+        variants={slideInFromRight(0.8)}
+        className="w-full h-full flex p-18 ps-16"
+      >
+        <Image
+          src="/mainIconsdark.svg"
+          alt="work icons"
+          height={650}
+          width={650}
+        />
       </motion.div>
-    );
-  };
-  
-  export default HeroContent;
+    </motion.div>
+  );
+};
+
+export default HeroContent;

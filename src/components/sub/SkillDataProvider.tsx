@@ -9,9 +9,10 @@ interface Props {
   width: number;
   height: number;
   index: number;
+  name: string;
 }
 
-const SkillDataProvider = ({ src, width, height, index }: Props) => {
+const SkillDataProvider = ({ src, width, height, index, name }: Props) => {
   const { ref, inView } = useInView({
     // triggerOnce: true,
   });
@@ -37,8 +38,9 @@ const SkillDataProvider = ({ src, width, height, index }: Props) => {
           alt=""
           width={width}
           height={height}
-          className="cursor-pointer"
+          className="cursor-pointer m-auto"
         />
+        <div className="flex rounded-full text-white p-1 my-3 w-28 justify-center items-center">{name}</div>
       </div>
     </motion.div>
   );

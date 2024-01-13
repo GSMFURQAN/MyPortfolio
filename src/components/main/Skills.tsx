@@ -17,8 +17,10 @@ const Skills = () => {
     src={image.Image}
     width={image.width}
     height={image.height}
-    index={index}/>
-))}
+    index={index}
+    name={image.skill_name}
+    />
+    ))}
 
 </div>
 <div className="flex flex-row justfiy-around flex-wrap mt-3 gap-5 items-center">
@@ -28,6 +30,7 @@ const Skills = () => {
     src={image.Image}
     width={image.width}
     height={image.height}
+    name={image.skill_name}
     index={index}/>
 ))}
 </div>

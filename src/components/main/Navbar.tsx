@@ -8,7 +8,7 @@ import { usePathname } from 'next/navigation'
 interface Props {
 }
 const Navbar = ({  }: Props) => {
-    const [url, setUrl] = useState('')
+    const [url, setUrl] = useState('#about me')
 
 console.log('url',url)
   const extLink = (link: string, name: string) => {
@@ -45,7 +45,7 @@ console.log('url',url)
             <a
               href="#about me"
               className={`cursor-pointer ${
-                url === "#about me" && "rounded-full px-4 py-1 bg-[#3544cf8b]"
+                url === "#about me" && "rounded-full px-4 py-1 bg-[#3544cf8b] "
               } `}
               onClick={()=>setUrl('#about me')}
               >
