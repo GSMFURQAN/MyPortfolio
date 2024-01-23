@@ -30,7 +30,7 @@ console.log('url',url)
           className="h-auto w-auto flex flex-row items-center"
         >
           <Image
-            src="/NavLogo.png"
+            src="/furqan.png"
             alt="logo"
             width={70}
             height={70}
