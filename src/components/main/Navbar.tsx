@@ -10,12 +10,12 @@ interface Props {
 const Navbar = ({  }: Props) => {
     const [url, setUrl] = useState('#about me')
 
-console.log('url',url)
   const extLink = (link: string, name: string) => {
     if (name === "gmail") {
-      window.location.href = `mailto:${link}`;
+      // window.location.href = `mailto:${link}`;
+      window.alert("Email : gsmfurqan@gmail.com");
     } else if (name === "linkedin" || name === "github") {
-      window.open(link, "_blank");
+      window.open(link, "_blank","noopener,noreferrer");
     } else if (name === "phone") {
       window.alert("Contact Number : 8639410779");
     }
@@ -37,7 +37,7 @@ console.log('url',url)
             className="cursor-pointer hover:animate-slowspin rounded-full m-2 p-2"
           />
           <span className="font-bold ml-[10px] hidden md:block text-gray-300">
-            Web Developer
+            Full Stack Developer
           </span>
         </a>
         <div className="w-[500px]  h-full flex flex-row items-center justify-between ">

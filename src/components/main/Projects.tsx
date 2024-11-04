@@ -36,7 +36,7 @@ const Projects = () => {
           description="Authen enables consumers and supply chain participants to ensure the authenticity, traceability, and sustainability of food and product ingredients. It provides a total view of data tracking the entire supply chain journey of a consumer food product or individual ingredient."
           link="https://authen.com/"
           client="Authen"
-          libraries="React Js, Redux-toolkit, Material UI, Axios, React Query, Formik and Chakra UI"
+          libraries=" MERN Stack, Redux-toolkit, Material UI, Axios, React Query, Formik and Chakra UI"
         />
         <ProjectCard
           src="/Sourcebae.png"

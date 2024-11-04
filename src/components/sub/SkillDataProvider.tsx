@@ -21,7 +21,7 @@ const SkillDataProvider = ({ src, width, height, index, name }: Props) => {
     hidden: { opacity: 0 },
     visible: { opacity: 1 },
   };
-  const animationDelay = 0.3;
+  const animationDelay = 0.5;
 
   return (
     <motion.div
