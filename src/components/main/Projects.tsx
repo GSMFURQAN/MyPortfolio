@@ -10,7 +10,15 @@ const Projects = () => {
       <h3 className=" mx-[20%] mb-14 text-4xl font-semibold text-white ">
         Projects{" "}
       </h3>
-      <div className="h-full w-full flex flex-wrap sm:flex-row gap-6 px-12">
+      <div className="h-full w-full flex flex-wrap sm:flex-row gap-6 px-12 justify-center items-center">
+        <ProjectCard
+          src="/kornferry.png"
+          title="KornFerry Talent Suite"
+          description="•	Korn Ferry specializes in talent acquisition, leadership development, and workforce transformation through assessments and analytics"
+          link="https://www.kornferry.com/capabilities/talent-suite"
+          client="KornFerry"
+          libraries="React Js, Node.js, Redux-toolkit, Tableau, PostgreSQL, DBeaver, Material UI, Axios, and Typescript"
+        />
         <ProjectCard
           src="/sols.png"
           title="Solicitors"
@@ -39,22 +47,14 @@ const Projects = () => {
           libraries=" MERN Stack, Redux-toolkit, Material UI, Axios, React Query, Formik and Chakra UI"
         />
         <ProjectCard
-          src="/Sourcebae.png"
-          title="SourceBae"
-          description=" It’s an Employee outsourcing platform for clients and agencies to choose the developers with the required skills and select the packages as per the requirement of the project.
-"
-          link="https://sourcebae.com/"
-          client="Shethink"
-          libraries="React Js, Context api, Tailwind CSS, Axios, and Typescript"
+          src="/verizon.png"
+          title="Verizon incident tracking system"
+          description="This is an incident ticketing system for Verizon, which is used to manage and track incidents and issues related to Verizon's services and products. It allows users to create, update, and resolve tickets, as well as view the status of their tickets and communicate with support teams."
+          link="https://www.verizon.com/business/support/vec/troubleshooting/incident-tickets/"
+          client="Verizon"
+          libraries=" React, Redux-toolkit, Material UI, Axios"
         />
-        <ProjectCard
-          src="/recruitbae.png"
-          title="RecruitBae"
-          description="It’s an Assessment and Evaluation platform to screen candidates during the hiring process and allows admin to create custom assessments and view the report cards generated with the candidate's test results and their performance on the Dashboard."
-          link="https://recruitbae.com/blog/"
-          client="Shethink"
-          libraries="React Js, Material UI, Tailwind CSS, Axios, and Typescript"
-        />
+      
       </div>
     </div>
   );

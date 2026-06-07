@@ -15,10 +15,10 @@ const HeroContent = () => {
   const link = document.createElement("a");
 
   // Set the href to the PDF file in the public directory
-  link.href = "/Furqan_MERN_Stack_Resume.pdf";
+  link.href = "/Furqan_Sr_Full_Stack_dev_Resume.pdf";
 
   // Set the download attribute with the desired file name
-  link.download = "Furqan_MERN_Stack_Resume.pdf";
+  link.download = "Furqan_Sr_Full_Stack_dev_Resume.pdf";
 
   // Append the link to the document
   document.body.appendChild(link);
@@ -40,8 +40,8 @@ const HeroContent = () => {
           variants={slideInFromTop}
           className="Welcome-box py-[8px] px-[10px] border border-[#7042f88b] opacity-[0.9]"
         >
-          <SparklesIcon className="text-[#fffff] mr-[10px] h-5 w-5" />
-          <h1 className=" text-[14px]">MERN Stack Developer Portfolio</h1>
+          <SparklesIcon className="text-gray-400 mr-[10px] h-5 w-5" />
+          <h1 className="text-gray-400 text-[14px] pl-3 pr-4">MERN Stack Developer Portfolio</h1>
         </motion.div>
 
         <motion.div

@@ -31,7 +31,7 @@ const ProjectCard = ({
   return (
     <div className=" ">
       <div
-        className=" h-[100%] max-w-sm  bg-white border border-gray-200 rounded-lg  dark:bg-gray-800 dark:border-gray-700 "
+        className="  h-[480px] max-w-sm  bg-white border border-gray-200 rounded-lg  dark:bg-gray-800 dark:border-gray-700 "
       
       >
         <Image
@@ -49,7 +49,9 @@ const ProjectCard = ({
             Client : {client}
           </p>
           <p className="mb-3 text-md font-normal text-gray-700 dark:text-gray-300">
-            Link : <a href={link} className="cursor-pointer text-blue-400 underline">{"Open Site"}</a>
+            Link : <a href={link} className="cursor-pointer text-blue-400 underline" target="_blank" rel="noopener noreferrer">
+              {"Open Site"}
+            </a>
           </p>
           <p className="mb-3 text-md font-normal text-gray-700 dark:text-gray-300">
             Stack and Libraries : {libraries}
