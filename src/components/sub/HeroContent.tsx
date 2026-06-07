@@ -52,7 +52,7 @@ const HeroContent = () => {
             Hi, I&apos;m Furqan.{" "}
             <span className=" Welcome-text block my-1 text-transparent bg-clip-text bg-gradient-to-r from-purple-300 to-white-600" >
               {" "}
-              MERN | Full Stack Developer{" "}
+              MERN | Sr.Full Stack Developer{" "}
             </span>
           </span>
         </motion.div>
@@ -61,7 +61,7 @@ const HeroContent = () => {
           variants={slideInFromLeft(0.8)}
           className="text-lg text-gray-400 mb-5 max-w-[600px]"
         >
-          with 4+ years of expertise in Website and Software development.
+          with 5.5+ years of expertise in Website and Software development.
           Please Navigate through this website and find out my skills, projects and
           experience.
         </motion.p>
