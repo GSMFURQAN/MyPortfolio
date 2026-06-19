@@ -5,16 +5,16 @@ import Projects from '@/components/main/Projects'
 import Experience from '@/components/main/Experience'
 
 export default function Home() {
-  
+
   return (
-   <main className='h-full w-full'>
-    <div className="flex flex-col  gap-20">
-<Hero/>
-<Skills/>
-<Projects/>
-<Experience/>
-    </div>
-   
-   </main>
+    <main className='h-full w-full'>
+      <div className="flex flex-col  gap-12">
+        <Hero />
+        <Skills />
+        <Experience />
+        <Projects />
+      </div>
+
+    </main>
   )
 }

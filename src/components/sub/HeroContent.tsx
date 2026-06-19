@@ -52,7 +52,7 @@ const HeroContent = () => {
             Hi, I&apos;m Furqan.{" "}
             <span className=" Welcome-text block my-1 text-transparent bg-clip-text bg-gradient-to-r from-purple-300 to-white-600" >
               {" "}
-              MERN | Sr.Full Stack Developer{" "}
+              MERN | Full Stack Developer{" "}
             </span>
           </span>
         </motion.div>

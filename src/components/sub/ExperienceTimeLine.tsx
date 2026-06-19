@@ -46,7 +46,7 @@ const ExperienceTimeLine = () => {
             </span>
           </h3>
           <div className=" mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
-            Senior Full Stack Developer in Korn Ferry project{" "}
+            Full Stack Developer in Korn Ferry project{" "}
           </div>
         </li>
         <p className="-ms-48 -mb-6 text-base font-normal text-gray-500 dark:text-gray-400">
