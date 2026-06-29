@@ -7,15 +7,15 @@ import { usePathname } from 'next/navigation'
 
 interface Props {
 }
-const Navbar = ({  }: Props) => {
-    const [url, setUrl] = useState('#about me')
+const Navbar = ({ }: Props) => {
+  const [url, setUrl] = useState('#about me')
 
   const extLink = (link: string, name: string) => {
     if (name === "gmail") {
       // window.location.href = `mailto:${link}`;
       window.alert("Email : gsmfurqan@gmail.com");
     } else if (name === "linkedin" || name === "github") {
-      window.open(link, "_blank","noopener,noreferrer");
+      window.open(link, "_blank", "noopener,noreferrer");
     } else if (name === "phone") {
       window.alert("Contact Number : 8639410779");
     }
@@ -44,40 +44,37 @@ const Navbar = ({  }: Props) => {
           <div className="flex items-center justify-between w-full h-auto border border-[#7042f861] bg-[#0300145E]  px-[20px] py-[10px] rounded-full text-white">
             <a
               href="#about me"
-              className={`cursor-pointer ${
-                url === "#about me" && "rounded-full px-4 py-1 bg-[#3544cf8b] "
-              } `}
-              onClick={()=>setUrl('#about me')}
-              >
+              className={`cursor-pointer ${url === "#about me" && "rounded-full px-4 py-1 bg-[#3544cf8b] "
+                } `}
+              onClick={() => setUrl('#about me')}
+            >
               About me
             </a>
             <a
               href="#skills"
-              className={`cursor-pointer ${
-                  url === "#skills" && "rounded-full px-4 py-1 bg-[#3544cf8b]"
+              className={`cursor-pointer ${url === "#skills" && "rounded-full px-4 py-1 bg-[#3544cf8b]"
                 } `}
-                onClick={()=>setUrl('#skills')}
-                >
+              onClick={() => setUrl('#skills')}
+            >
               Skills
             </a>
             <a
-              href="#projects"
-              className={`cursor-pointer ${
-                  url === "#projects" && "rounded-full px-4 py-1 bg-[#3544cf8b]"
-                } `}
-                onClick={()=>setUrl('#projects')}
-                >
-              Projects
-            </a>
-            <a
               href="#work experience"
-              className={`cursor-pointer ${
-                  url === "#work experience" && "rounded-full px-4 py-1 bg-[#3544cf8b]"
+              className={`cursor-pointer ${url === "#work experience" && "rounded-full px-4 py-1 bg-[#3544cf8b]"
                 } `}
-                onClick={()=>setUrl('#work experience')}
-                >
+              onClick={() => setUrl('#work experience')}
+            >
               Experience
             </a>
+            <a
+              href="#projects"
+              className={`cursor-pointer ${url === "#projects" && "rounded-full px-4 py-1 bg-[#3544cf8b]"
+                } `}
+              onClick={() => setUrl('#projects')}
+            >
+              Projects
+            </a>
+
           </div>
         </div>
         <div className="flex flex-row gap-5 cursor-pointer ">
@@ -93,8 +90,8 @@ const Navbar = ({  }: Props) => {
                 z.name === "phone"
                   ? "8639410779"
                   : z.name === "gmail"
-                  ? "gsmfurqan@gmail.com"
-                  : ""
+                    ? "gsmfurqan@gmail.com"
+                    : ""
               }
               className="mx-2"
             />

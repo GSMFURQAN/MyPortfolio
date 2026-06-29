@@ -15,10 +15,10 @@ const HeroContent = () => {
   const link = document.createElement("a");
 
   // Set the href to the PDF file in the public directory
-  link.href = "/Furqan_Sr_Full_Stack_dev_Resume.pdf";
+  link.href = "/Furqan_mid_Full_Stack_dev_Resume.pdf";
 
   // Set the download attribute with the desired file name
-  link.download = "Furqan_Sr_Full_Stack_dev_Resume.pdf";
+  link.download = "Furqan_mid_Full_Stack_dev_Resume.pdf";
 
   // Append the link to the document
   document.body.appendChild(link);
